@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Raat kamaal hai tu mere naal hai-->
+  <div class="container">
+    <div class="Calculator">
+    <h1>Calculator</h1>
+    <p>
+      <input type="text" name="inputBar" class="inputBar" id="inputBar">
+      <div class="num-buttons-1-container">
+        <button class="num-buttons-1" onclick="updateCalculation('1');
+      document.getElementById('inputBar').value+='1';
+      ">1</button>
+      <button class="num-buttons-1" onclick="updateCalculation('2');
+      document.getElementById('inputBar').value+='2';">2</button>
+      <button class="num-buttons-1" onclick="updateCalculation('3');
+      document.getElementById('inputBar').value+='3';">3</button>
+      <button class="num-buttons-1" onclick="updateCalculation('+');
+      document.getElementById('inputBar').value+='+';">+</button>
+      </div>
+      
+    </p>
+    <p>
+      <div class="num-buttons-2-container">
+        <button class="num-buttons-2" onclick="updateCalculation('4');
+        document.getElementById('inputBar').value+='4';">4</button>
+        <button class="num-buttons-2" onclick="updateCalculation('5');
+        document.getElementById('inputBar').value+='5';">5</button>
+        <button class="num-buttons-2" onclick="updateCalculation('6');
+        document.getElementById('inputBar').value+='6';">6</button>
+        <button class="num-buttons-2" onclick="updateCalculation('-');
+        document.getElementById('inputBar').value+='-';">-</button>  
+      </div>
+      
+    </p>
+    <p>
+      <div class="num-buttons-3-container">
+        <button class="num-buttons-3" onclick="updateCalculation('7');
+      document.getElementById('inputBar').value+='7';">7</button>
+      <button class="num-buttons-3" onclick="updateCalculation('8');
+      document.getElementById('inputBar').value+='8';">8</button>
+      <button class="num-buttons-3" onclick="updateCalculation('9');
+      document.getElementById('inputBar').value+='9';">9</button>
+      <button class="num-buttons-3" onclick="updateCalculation('*');
+      document.getElementById('inputBar').value+='*';">*</button>
+      </div>
+      
+    </p>
+    <p>
+      <div class="num-buttons-4-container">
+        <button class="num-buttons-4" onclick="updateCalculation('0');
+      document.getElementById('inputBar').value+='0';">0</button>
+      <button class="num-buttons-4" onclick="updateCalculation('.');
+      document.getElementById('inputBar').value+='.';">.</button>
+      <button class="num-buttons-4" onclick="
+      let calculation = document.getElementById('inputBar').value;
+      console.log(calculation);
+      if (calculation[calculation.length-1] in ['1','2','3','4','5','6','7','8','9','0']) {
+        document.getElementById('inputBar').value=eval(calculation);
+      }
+      ">=</button>
+      <button class="num-buttons-4" onclick="updateCalculation('/');
+      document.getElementById('inputBar').value+='/';">/</button>
+      </div>
+      
+    </p>
+    <button class="clear-button" onclick="
+    updateCalculation('Clear');
+    ">
+      Clear
+    </button>
+    <button class="bs-button" onclick="
+    document.getElementById('inputBar').value=document.getElementById('inputBar').value.slice(0,document.getElementById('inputBar').value.length-1);
+    ">␈</button>
+  </div>
+  </div>
+  <script>
+    
+    
+    function updateCalculation(button) {
+      if (button === '=') {
+        document.getElementById('inputBar').value = eval(calculation);
+      } else if (button === 'Clear') {
+        document.getElementById('inputBar').value = '';
+        console.log('Cleared')
+      }
+        
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+body {
+  background-color: black;
+}
+h1 {
+  color: white;
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.num-buttons-1-constainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.num-buttons-2-constainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.num-buttons-3-constainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.num-buttons-4-constainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.num-buttons-1 {
+  flex: 1;
+  border-radius: 90px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  color: black;
+  background-color: orange;
+  border: none;
+  font-weight: bolder;
+  transition: opacity 0.15s;
+}
+.num-buttons-2 {
+  flex: 1;
+  border-radius: 90px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  color: black;
+  background-color: orange;
+  border: none;
+  font-weight: bolder;
+  transition: opacity 0.15s;
+}
+.num-buttons-3 {
+  flex: 1;
+  border-radius: 90px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  color: black;
+  background-color: orange;
+  border: none;
+  font-weight: bolder;
+  transition: opacity 0.15s;
+}
+.num-buttons-4 {
+  flex: 1;
+  border-radius: 90px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  color: black;
+  background-color: orange;
+  border: none;
+  font-weight: bolder;
+  transition: opacity 0.15s;
+}
+.clear-button {
+  flex: 1;
+  border-radius: 90px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  border: none;
+  font-weight: bolder;
+  transition: opacity 0.15s;
+}
+.num-buttons-1:hover {
+  opacity: 0.65;
+}
+.num-buttons-1:active {
+  opacity: 0.5;
+}
+.num-buttons-2:hover {
+  opacity: 0.65;
+}
+.num-buttons-2:active {
+  opacity: 0.5;
+}
+.num-buttons-3:hover {
+  opacity: 0.65;
+}
+.num-buttons-3:active {
+  opacity: 0.5;
+}
+.num-buttons-4:hover {
+  opacity: 0.65;
+}
+.num-buttons-4:active {
+  opacity: 0.5;
+}
+.clear-button:hover {
+  opacity: 0.65;
+}
+.clear-button:active {
+  opacity: 0.5;
+}
+.inputBar {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  border: 5px;
+}
+.bs-button {
+  flex: 1;
+  border-radius: 90px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  border: none;
+  font-weight: bolder;
+  transition: opacity 0.15s;
+}
+.bs-button:hover {
+  opacity: 0.65;
+}
+.bs-button:active {
+  opacity: 0.5;
+}
+
